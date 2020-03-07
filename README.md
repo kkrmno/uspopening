@@ -26,7 +26,7 @@ After compilation, there should exist a mex-file called
 First, make sure that DIPImage has been initialized (run "dipstart.m"),
 then apply the opening to an 8-bit grayscale image, I, by
 
-   uspopening(I, length, h, 1)
+    uspopening(I, length, h, 1)
 
 This will return a reconstructed opened image using the specified length
 and h-value. If reconstruction is not desired, specify 0, instead of 1 as
@@ -37,6 +37,6 @@ step.
 
 # Help:
 
-   help uspopening
+    help uspopening
 
 gives some information on how to apply the opening.

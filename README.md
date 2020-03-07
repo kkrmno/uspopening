@@ -14,13 +14,13 @@ IEEE Transactions on Image Processing 25.12 (2016): 5589-5600.
 Note that MATLAB and DIPImage are required to run this code.
 
 # To compile:
----------------
+
 In MATLAB, compile by
 
     mex pathOpeningUnbiased.cpp NodeClassNew.cpp
 
 # To run:
----------------
+
 After compilation, there should exist a mex-file called
 "pathOpeningUnbiased.mex[...]" in the same directory as "uspopening.m".
 First, make sure that DIPImage has been initialized (run "dipstart.m"),
@@ -36,7 +36,6 @@ You may want to add a black border around your image as a preprocessing
 step.
 
 # Help:
----------------
 
    help uspopening
 

@@ -19,7 +19,7 @@
  * Author:
  * Teo Asplund
  *
- * Reference: A faster, Unbiased Path Opening by Upper Skeletonization and
+ * Reference: A Faster, Unbiased Path Opening by Upper Skeletonization and
  * Weighted Adjacency Graphs.
  *
  */

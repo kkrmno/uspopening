@@ -2,7 +2,7 @@
  * Author:
  * Teo Asplund
  *
- * Reference: A faster, Unbiased Path Opening by Upper Skeletonization and 
+ * Reference: A Faster, Unbiased Path Opening by Upper Skeletonization and 
  * Weighted Adjacency Graphs.
  *
  */
@@ -45,7 +45,7 @@ class NodeClassNew
     bool isEnqueued();
     void setEnqueued();
     void setNotEnqueued();
-    
+
     bool getChangedTest();
     void setChangedTest();
 
@@ -57,13 +57,13 @@ class NodeClassNew
     void findCircularNeighbors_Test(vector<NodeClassNew*> *nodes_ptrs, int width, int height);
 
     bool hasNoNeighbors(int upDir);
-    
+
     /* Offsets: N 1, NE 2, E 3, SE 4, S 5, SW 6, W 7, NW 0    % 8 */
     NodeClassNew *getCircNeighbor(int upDir, int whichOne);
-    
+
     int getIndexInNodeList(int imageHeight);
 
-  private:   
+  private:
     double lengths[2];
     int row;
     int col;
@@ -182,8 +182,8 @@ inline int NodeClassNew::getIndexInNodeList(int imageHeight)
   return col*imageHeight + row;
 }
 
-/* upDir specifies the main direction of the cone. whichOne gives the element, 
-   where 0 is the CCW element in the cone, 1 is the center element, and 2 is 
+/* upDir specifies the main direction of the cone. whichOne gives the element,
+   where 0 is the CCW element in the cone, 1 is the center element, and 2 is
    the CW element */
 inline NodeClassNew *NodeClassNew::getCircNeighbor(int upDir, int whichOne)
 {

@@ -2,7 +2,7 @@
  * Author:
  * Teo Asplund
  *
- * Reference: A faster, Unbiased Path Opening by Upper Skeletonization and 
+ * Reference: A Faster, Unbiased Path Opening by Upper Skeletonization and 
  * Weighted Adjacency Graphs.
  *
  */
@@ -29,7 +29,7 @@ NodeClassNew::NodeClassNew(unsigned char val = 0, int r = 0, int c = 0)
   active = true;
 
   lengths[0] = lengths[1] = 0.0;
-  
+
   for(int i = 0; i < 8; i++)
   {
       circNeighbors[i] = NULL;
@@ -117,7 +117,7 @@ void NodeClassNew::findCircularNeighbors_Test(vector<NodeClassNew*> *nodes_ptrs,
 
             neighborRow = row + rOff;
             neighborIndex = neighborRow + neighborCol*height;
-            
+
             /* Check neighbor is within bounds of image. */
             if(neighborCol >= 0 && neighborCol < width && neighborRow >= 0 && neighborRow < height)
             {

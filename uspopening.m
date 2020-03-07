@@ -7,8 +7,8 @@
 %      h - height of the h-minima transform.
 %      recons - boolean indicating whether reconstruction is desired
 %
-% In some cases, it may be desirable to skip the initial skeletonization 
-% (e.g., if the image contains a lot of zeros). Instead, one may then 
+% In some cases, it may be desirable to skip the initial skeletonization
+% (e.g., if the image contains a lot of zeros). Instead, one may then
 % immediately apply the path opening to the image:
 %
 % opened = pathOpeningUnbiased(image, length);
@@ -22,7 +22,7 @@
 % Author:
 % Teo Asplund
 %
-% Reference: A faster, Unbiased Path Opening by Upper Skeletonization and 
+% Reference: A Faster, Unbiased Path Opening by Upper Skeletonization and 
 % Weighted Adjacency Graphs.
 %
 

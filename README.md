@@ -7,7 +7,7 @@ This is an implementation of the upper skeleton path opening as described
 in the paper:
 
 Asplund, Teo, and Cris L. Luengo Hendriks.
-"A faster, Unbiased Path Opening by Upper Skeletonization and Weighted
+"A Faster, Unbiased Path Opening by Upper Skeletonization and Weighted
 Adjacency Graphs."
 IEEE Transactions on Image Processing 25.12 (2016): 5589-5600.
 
